@@ -1,0 +1,40 @@
+############################################
+#
+#Created on: 2014年5月27日
+#Author: Figoo
+#
+############################################
+
+#编译文件
+
+#! xdr_sender 头文件 #
+SIG_PARSER_INC =  
+				
+INCS = $(addprefix $(SRC_INC_DIR)/",$(SIG_PARSER_INC))  
+
+#! sig_parser
+SIG_PARSER_SRC = sig_parse.c \
+	       sig_fragment.c \
+	       sig_gb_bssgp.c \
+	       sig_gb_gmm.c \
+	       sig_gb_llc.c \
+	       sig_gb.c \
+	       sig_packet.c \
+	       sig_user.c \
+	       sig_xdr.c 
+
+SRCS = $(addprefix $(SRC_DIR)/,$(SIG_PARSER_SRC))  
+ 
+OBJS = $(SRCS:.c=.o)
+
+
+
+
+
+
+
+
+
+
+
+	

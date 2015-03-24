@@ -1,0 +1,32 @@
+############################################
+#
+#Created on: 2014年5月27日
+#Author: Figoo
+#
+############################################
+
+#编译文件
+
+#! log头文件
+LOG_INC = 
+				
+INCS = $(addprefix $(SRC_INC_DIR)/",$(LOG_INC))  
+
+#! log
+LOG_SRC = logd.c
+
+SRCS = $(addprefix $(SRC_DIR)/,$(LOG_SRC))  
+ 
+OBJS = $(SRCS:.c=.o)
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,35 @@
+############################################
+#
+#Created on: 2014年5月27日
+#Author: Figoo
+#
+############################################
+
+#编译文件
+
+#! data_parser 头文件 #
+DATA_PARSER_INC =  
+				
+INCS = $(addprefix $(SRC_INC_DIR)/",$(DATA_PARSER_INC))  
+
+#! data_parser
+DATA_PARSER_SRC = data_parser.c \
+		  dp_sndcp.c \
+		  dp_tup.c \
+		  dp_if0_1.c
+
+SRCS = $(addprefix $(SRC_DIR)/,$(DATA_PARSER_SRC))  
+ 
+OBJS = $(SRCS:.c=.o)
+
+
+
+
+
+
+
+
+
+
+
+	

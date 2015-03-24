@@ -1,0 +1,33 @@
+############################################
+#
+#Created on: 2014年5月27日
+#Author: Figoo
+#
+############################################
+
+#编译文件
+
+#! ui_sender 头文件 #
+UI_SENDER_INC =  
+				
+INCS = $(addprefix $(SRC_INC_DIR)/",$(UI_SENDER_INC))  
+
+#! ui_sender
+UI_SENDER_SRC = ui_sender.c \
+		ui_socket.c
+
+SRCS = $(addprefix $(SRC_DIR)/,$(UI_SENDER_SRC))  
+ 
+OBJS = $(SRCS:.c=.o)
+
+
+
+
+
+
+
+
+
+
+
+	

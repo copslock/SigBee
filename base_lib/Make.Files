@@ -1,0 +1,40 @@
+############################################
+#
+#Created on: 2014年5月27日
+#Author: Figoo
+#
+############################################
+
+#编译文件
+
+#! base_lib 头文件 #
+BASE_LIB_INC =  
+				
+INCS = $(addprefix $(SRC_INC_DIR)/",$(BASE_LIB_INC))  
+
+#! base_lib
+BASE_LIB_SRC = base_lib_file.c \
+		base_lib_mem.c \
+		base_lib_mica.c \
+		base_lib_mpipe.c \
+		base_lib_pack.c \
+		base_lib_process.c \
+		base_lib_queue.c \
+		base_lib_util.c \
+		sb_qlog.c 
+
+SRCS = $(addprefix $(SRC_DIR)/,$(BASE_LIB_SRC))  
+ 
+OBJS = $(SRCS:.c=.o)
+
+
+
+
+
+
+
+
+
+
+
+	
