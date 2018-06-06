@@ -815,6 +815,5 @@ sb_s32 sb_statistic_init(void)
 	}
 	memset(g_dp_statistics, 0, sizeof(dp_statistic_t) * g_adv_config.data_parser_cpus);
 
-	return RET_SUCC;
-
+	return RET_SUCC;;
 }
