@@ -1,0 +1,53 @@
+############################################
+#
+#Created on: 2014年5月27日
+#Author: Figoo
+#
+############################################
+
+#编译文件
+
+#! src base_lib 目录
+SRC_BASE_LIB_DIR = $(SRC_DIR)/base_lib
+
+#! src init 
+SRC_INIT_DIR = $(SRC_DIR)/init
+
+#! src logd
+SRC_LOG_DIR = $(SRC_DIR)/logd
+
+#! src sig_parser
+SRC_SP_DIR = $(SRC_DIR)/sig_parser
+
+#! src data_parser
+SRC_DP_DIR = $(SRC_DIR)/data_parser
+
+#! src ui_sender
+SRC_US_DIR = $(SRC_DIR)/ui_sender
+
+#! src xdr_sender
+SRC_XS_DIR = $(SRC_DIR)/xdr_sender
+	
+#! init 头文件
+INIT_INC = init.h  
+
+INCS +=	$(addprefix $(SRC_INIT_DIR)/,$(INIT_INC)) 
+
+#! init 
+INIT_SRC = main.c sb_process.c read_config.c
+
+SRCS += $(addprefix $(SRC_INIT_DIR)/,$(INIT_SRC)) 
+
+OBJS = $(SRCS:.c=.o)
+
+
+
+
+
+
+
+
+
+
+
+	

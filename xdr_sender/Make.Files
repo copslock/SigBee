@@ -1,0 +1,33 @@
+############################################
+#
+#Created on: 2014年5月27日
+#Author: Figoo
+#
+############################################
+
+#编译文件
+
+#! xdr_sender 头文件 #
+XDR_SENDER_INC =  
+				
+INCS = $(addprefix $(SRC_INC_DIR)/",$(XDR_SENDER_INC))  
+
+#! xdr_sender
+XDR_SENDER_SRC = xdr_sender.c \
+	       xdr_socket.c
+
+SRCS = $(addprefix $(SRC_DIR)/,$(XDR_SENDER_SRC))  
+ 
+OBJS = $(SRCS:.c=.o)
+
+
+
+
+
+
+
+
+
+
+
+	
